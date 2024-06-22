@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.donatien{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 30px;
+}
+.donatien::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    background-color: yellow;
+    box-shadow: rgb(red, green, blue);
+}
